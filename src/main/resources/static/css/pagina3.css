@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto Mono;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+header {
+    background-color: #8CB8A0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagen-header {
+    width: 100px;
+    height: 90px;
+}
+
+.titulo1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #32729E;
+}
+
+.titulo2 ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.titulo2 ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    gap: 20px;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #F9F9F9; /* Optional background color */
+}
+
+/* Individual furniture item (mueble) styles */
+.mueble {
+    flex: 1 1 calc(33.33% - 20px); /* Ensures 3 items per row with spacing */
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mueble:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styles */
+.mueble img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #8CB8A0;
+}
+
+/* Description container */
+.descripcion {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #8CB8A0;
+}
+
+/* Text container */
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+/* Text styles */
+.texto h2 {
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.texto span {
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Price container */
+.precio {
+    background-color: #32729E;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #F5F5F5;
+    padding:15px;
+    border-radius: 10px;
+}
+
+/* Button styles */
+button {
+    background-color: #32729E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #90afcf;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.footer1, .footer2, .footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.footer-primera {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-primera img {
+    width: 207px;
+    height: 151px;
+}
+
+.footer-primera h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.footer1 span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: Inria Sans;
+}
+
+.footer2 ul a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: Inria Sans; 
+
+}
+
+.footer3 h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.footer2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.footer2 ul a {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer3 h4 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fila-footer3 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.iconos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.iconos i {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.iconos a {
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.iconos a:hover {
+    transform: scale(1.2);
+    color: #FFD700;
+}
+
+@media (max-width: 1024px) {
+    .mueble {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row for medium screens */
+    }
+
+    .descripcion {
+        flex-direction: column; /* Stack text and price vertically */
+        gap: 15px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .titulo2 ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imagen-header {
+        width: 80px;
+        height: 70px;
+    }  
+    
+    section {
+        padding: 30px;
+    }
+
+    .mueble {
+        flex: 1 1 calc(50% - 15px); /* Slightly tighter spacing for smaller screens */
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer1, .footer2, .footer3 {
+        padding: 20px;
+    }
+
+    .footer1 span, .footer2 ul a, .footer3 h4 {
+        font-size: 18px;
+    }
+
+    .fila-footer3 {
+        flex-direction: column;
+        gap:10px;
+    }
+    .contacto-iconos{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+    }
+
+    .iconos {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .iconos i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .titulo1 {
+        font-size: 22px;
+    }
+
+    .titulo2 ul {
+        gap: 15px;
+    }
+
+    
+    .mueble {
+        flex: 1 1 100%; /* 1 item per row for small screens */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .precio {
+        font-size: 18px;
+    }
+
+    .texto h2 {
+        font-size: 18px;
+    }
+
+    .texto span {
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+
+    .footer1 span, .footer2 ul a, .footer3 h4 {
+        font-size: 16px;
+    }
+
+    .contacto-iconos{
+        display: flex;
+        gap:10px;
+    }
+    .fila-footer3{
+        display: flex;
+        gap:10px;
+    }
+
+    .iconos {
+        gap: 30px;
+    }
+
+    .iconos i {
+        font-size: 1.2rem;
+    }
+}
+

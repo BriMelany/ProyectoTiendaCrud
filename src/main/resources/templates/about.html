@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title  th:text="${titulo2}"></title>
+<link rel="stylesheet" th:href="@{css/pagina2.css}"></link>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<div class="titulo1">
+			<img class="imagen-header" th:src="@{images/header-1.png}"
+				alt="Logo">
+			<h1>Furniture Market</h1>
+		</div>
+		<nav class="titulo2">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/about">Sobre Nosotros</a></li>
+				<li><a href="/catalogo">Productos</a></li>
+				<li><a href="/chatBot">Chatbot</a></li>
+				<li><a href="/productos">Mantenimiento</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="section-intro">
+		<div class="imagen-pagina2">
+			<img th:src="@{images/sillon_alumbrado.jpg}"
+				alt="Sillón alumbrado">
+		</div>
+
+		<div class="descripcion-pagina2">
+			<div class="descripcion-texto">
+				<span>¡Bienvenido a Furniture Market, donde cada detalle
+					importa!</span>
+			</div>
+			<a href="/productos"><button class="btn-ver-mas">Ver más</button></a>
+		</div>
+	</section>
+
+	<div class="texto-sobrenosotros">
+		<div class="texto">
+			<p>En Furniture Market, nos apasiona transformar espacios en
+				hogares acogedores y funcionales.</p>
+			<p>Desde nuestros inicios, nos hemos dedicado a ofrecer muebles
+				de alta calidad que combinan diseño, confort y durabilidad.</p>
+			<p>Creemos que cada hogar cuenta una historia, y nuestros muebles
+				son piezas clave para reflejar tu estilo y personalidad.</p>
+		</div>
+
+		<div class="texto">
+			<p>Ya sea que busques un diseño moderno, clásico o minimalista,
+				en Furniture Market encontrarás una amplia variedad de opciones que
+				se adaptan a tus necesidades y presupuesto.</p>
+			<p>Nuestro compromiso es brindarte una experiencia de compra
+				excepcional, desde el momento en que nos visitas hasta la entrega de
+				tus muebles.</p>
+			<p>Trabajamos con los mejores materiales y fabricantes para
+				garantizar que cada pieza sea tan única como tú.</p>
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer1">
+			<div class="footer-primera">
+				<img th:src="@{images/header-1.png}" alt="Logo">
+				<h1 class="footer-titulo">Furniture Market</h1>
+			</div>
+			<span>Empresa dedicada a la venta de muebles de la más alta
+				calidad e innovación.</span>
+			<div class="iconos">
+				<a href="https://www.facebook.com/" class="icon"><i class="fab fa-facebook"></i></a> <a
+					href="https://www.instagram.com/" class="icon"><i class="fab fa-instagram"></i></a> <a
+					href="https://www.youtube.com/" class="icon"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+
+		<div class="footer2">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/about">Sobre Nosotros</a></li>
+				<li><a href="/catalogo">Productos</a></li>
+				<li><a href="/chatBot">Chatbot</a></li>
+				<li><a href="/productos">Mantenimiento</a></li>
+			</ul>
+		</div>
+
+		<div class="footer3">
+			<h4>Contacto</h4>
+			<div class="contacto-iconos">
+				<div class="fila-footer3">
+					<i class="fas fa-phone"></i> <span>+51 998765434</span>
+				</div>
+				<div class="fila-footer3">
+					<i class="fas fa-envelope"></i> <span>furniture@gmail.com</span>
+				</div>
+				<div class="fila-footer3">
+					<i class="fas fa-map-marker-alt"></i> <span>Av. San
+						Francisco 23</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

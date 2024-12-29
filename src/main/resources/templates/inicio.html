@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/pagina1.css}">
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+	crossorigin="anonymous">	
+<title th:text="${titulo1}"></title>
+</head>
+<body>
+
+	<header>
+		<div class="titulo1">
+			<img class="imagen-header" th:src="@{/images/header-1.png}"
+				alt="Logo"/>
+			<h1>Furniture Market</h1>
+		</div>
+		<nav class="titulo2">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/about">Sobre Nosotros</a></li>
+				<li><a href="/catalogo">Productos</a></li>
+				<li><a href="/chatBot">Chatbot</a></li>
+				<li><a href="/productos">Mantenimiento</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="imagen-principal">
+		<img th:src="@{/images/imagen-principal.jpg}"
+			alt="ImagenPrincipal"/>
+	</div>
+
+	<section>
+		<div class="cuadro">
+			<div class="descripcion">
+				<h2>Juego sillas</h2>
+				<span>Forrados polares y de colores</span>
+				<button>
+					<a href="/productos">Ver más</a>
+				</button>
+			</div>
+			<div class="imagen-cuadro">
+				<img th:src="@{/images/inicio6.jpg}"
+					alt="Juego de sillas y mesas"/>
+			</div>
+		</div>
+
+		<div class="cuadro">
+			<div class="descripcion">
+				<h2>Sillón polar</h2>
+				<span>Forrados de color negro claro</span>
+				<button>
+					<a href="/productos">Ver más</a>
+				</button>
+			</div>
+			<div class="imagen-cuadro">
+				<img th:src="@{/images/inicio3.jpg}" alt="Sillón polar"/>
+			</div>
+		</div>
+
+		<div class="cuadro">
+			<div class="imagen-cuadro">
+				<img th:src="@{/images/inicio2.jpg}" alt="Juego de silla"/>
+			</div>
+			<div class="descripcion">
+				<h2>Juego de silla</h2>
+				<span>Forrado de tela con colores llamativos</span>
+				<button>
+					<a href="/productos">Ver más</a>
+				</button>
+			</div>
+		</div>
+
+		<div class="cuadro">
+			<div class="imagen-cuadro">
+				<img th:src="@{/images/inicio5.jpg}" alt="Silla Fosvellen"/>
+			</div>
+			<div class="descripcion">
+				<h2>Silla de tela</h2>
+				<span>Forrado de tela con colores neutros</span>
+				<button>
+					<a href="/productos">Ver más</a>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer1">
+			<div class="footer-primera">
+				<img th:src="@{/images/header-1.png}" alt="Logo"/>
+				<h1 class="footer-titulo">Furniture Market</h1>
+			</div>
+			<span>Empresa dedicada a la venta de muebles de la más alta
+				calidad e innovación.</span>
+			<div class="iconos">
+				<a href="https://www.facebook.com/" class="icon"><i class="fab fa-facebook"></i></a> <a
+					href="https://www.instagram.com/" class="icon"><i class="fab fa-instagram"></i></a> <a
+					href="https://www.youtube.com/" class="icon"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+
+		<div class="footer2">
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/about">Sobre Nosotros</a></li>
+				<li><a href="/catalogo">Productos</a></li>
+				<li><a href="/chatBot">Chatbot</a></li>
+				<li><a href="/productos">Mantenimiento</a></li>
+			</ul>
+		</div>
+
+		<div class="footer3">
+			<h4>Contacto</h4>
+			<div class="contacto-iconos">
+				<div class="fila-footer3">
+					<i class="fas fa-phone"></i> <span>+51 998765434</span>
+				</div>
+				<div class="fila-footer3">
+					<i class="fas fa-envelope"></i> <span>furniture@gmail.com</span>
+				</div>
+				<div class="fila-footer3">
+					<i class="fas fa-map-marker-alt"></i> <span>Av. San
+						Francisco 23</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
